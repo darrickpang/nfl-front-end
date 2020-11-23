@@ -11,7 +11,6 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-    //student_token
     if(localStorage.token){  
       fetch('http://localhost:3000/user_persist',{
       headers: {
@@ -27,10 +26,10 @@ class App extends React.Component {
     if (json.user){
       localStorage.token = json.token
       this.setState({
-        student: {
-          id: json.student.data.attributes.id,
-          name: json.student.data.attributes.name,
-          age: json.student.data.attributes.age
+        user: {
+          id: json.user.data.attributes.id,
+          name: json.user.data.attributes.name,
+          age: json.user.data.attributes.age
         },
         token: json.token
       }, () => this.props.history.push('/user_main'))
@@ -48,7 +47,7 @@ class App extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(student)
+      body: JSON.stringify(user)
     })
     .then(res => res.json())
     .then(json => {
@@ -85,11 +84,11 @@ class App extends React.Component {
   }
 
   renderUserLogin = () => {
-    return <StudentLoginSignUp login={true} userLogin={this.userLogin}/>
+    return <UserLoginSignUp login={true} userLogin={this.userLogin}/>
   }
 
   renderUserSignUp = () => {
-    return <StudentLoginSignUp login={false} studentSignUp={this.studentSignUp}/>
+    return <UserLoginSignUp login={false} userSignUp={this.userSignUp}/>
   }
 
 
