@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Card, Form, Input, Container, Col } from "reactstrap";
 
-export default class StudentLoginSignUp extends React.Component {
+export default class UserLoginSignUp extends React.Component {
     state = {
         name: "",
         password: "",
