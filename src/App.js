@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import Welcome from './containers/Welcome';
 import UserLoginSignUp from './components/UserLoginSignUp';
@@ -11,7 +11,8 @@ class App extends React.Component {
       id: null,
       name: "",
       age: "",
-    }
+    },
+    token: ""
   }
 
   componentDidMount(){
@@ -96,7 +97,7 @@ class App extends React.Component {
   }
 
   renderUserMainContent = () => {
-    return <UserMainContent student ={this.state.student} token={this.state.token} />
+    return <UserMainContent user ={this.state.user} token={this.state.token} />
   }
 
   render(){
@@ -104,9 +105,9 @@ class App extends React.Component {
       <div className="App">
         <Switch>
           <Route path="/" exact component={Welcome}/>
-          <Route path="/student_login" render={this.renderUserLogin}/>
-          <Route path="/student_signup" render={this.renderUserSignUp}/>
-          <Route path="/student_main" render={this.renderUserMainContent}/>
+          <Route path="/user_login" render={this.renderUserLogin}/>
+          <Route path="/user_signup" render={this.renderUserSignUp}/>
+          <Route path="/user_main" render={this.renderUserMainContent}/>
         </Switch>
       </div>
     );
