@@ -1,4 +1,5 @@
 import React from 'react';
+import Sport from '../components/Sport'
 import {  withRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import { Button } from 'reactstrap';
 
@@ -21,6 +22,14 @@ class UserMainContent extends React.Component {
         )
     }
 
+    renderSport = () => {
+        return(
+            <div>
+                <Sport/>
+            </div>
+        )
+    }
+
     render(){
         return(
             <div className="main-page">
@@ -32,6 +41,7 @@ class UserMainContent extends React.Component {
                 </ul> */}
                 {this.renderUserInfo()}
                 {this.renderLogout()} 
+                {this.renderSport()}
             </div>
         )
     }
