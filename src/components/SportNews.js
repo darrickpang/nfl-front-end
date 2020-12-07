@@ -2,7 +2,7 @@ import React from 'react';
 import {  withRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import { Button } from 'reactstrap';
 
-class Sport extends React.Component {
+class SportNews extends React.Component {
     state = {
         news: []
     }
@@ -16,7 +16,7 @@ class Sport extends React.Component {
             .then(response => response.json())
             .then(data => {
             this.setState({
-                news: data
+                news: data.articles
             })
         })
     }
@@ -24,11 +24,11 @@ class Sport extends React.Component {
     render(){
         return(
             <div>
-                Sport.js
+                SportNews.js
                 {this.state.news}
             </div>
         )
     }
 }
 
-export default Sport 
+export default SportNews
