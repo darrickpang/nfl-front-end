@@ -25,7 +25,9 @@ class SportNews extends React.Component {
         return(
             <div>
                 SportNews.js
-                {this.state.news.map(article => article.description)}
+                {this.state.news.map(article => 
+                    <p>{article.description}</p>
+                    )}
             </div>
         )
     }
