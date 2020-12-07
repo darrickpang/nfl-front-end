@@ -11,7 +11,7 @@ class SportNews extends React.Component {
         fetch('http://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard')
     }
 
-    getNews = () => {
+    componentDidMount() {
         fetch('http://site.api.espn.com/apis/site/v2/sports/football/nfl/news')
             .then(response => response.json())
             .then(data => {
@@ -25,7 +25,7 @@ class SportNews extends React.Component {
         return(
             <div>
                 SportNews.js
-                {this.state.news}
+                {this.state.news.map(article => article.description)}
             </div>
         )
     }
