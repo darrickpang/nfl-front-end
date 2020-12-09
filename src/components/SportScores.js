@@ -21,7 +21,6 @@ class SportScores extends React.Component {
                 SportScores.js
                 {this.state.news.map(article => 
                     <p>{article.description}</p>
-                    // <p>{article.links.web.href}</p>
                     )}
             </div>
         )
