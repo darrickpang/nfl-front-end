@@ -10,7 +10,7 @@ class SportScores extends React.Component {
             .then(response => response.json())
             .then(data => {
             this.setState({
-                scores: data.articles
+                scores: data.events
             })
         })
     }
@@ -19,8 +19,8 @@ class SportScores extends React.Component {
         return(
             <div>
                 SportScores.js
-                {this.state.news.map(article => 
-                    <p>{article.description}</p>
+                {this.state.scores.map(score => 
+                    <p>{score.name}</p>
                     )}
             </div>
         )

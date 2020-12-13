@@ -54,6 +54,7 @@ class UserMainContent extends React.Component {
                 {this.renderUserInfo()}
                 {this.renderLogout()} 
                 {this.renderSportNews()}
+                {this.renderSportScores()}
                 {this.renderTeamData()}
             </div>
         )
