@@ -50,13 +50,16 @@ class UserMainContent extends React.Component {
 
     render(){
         return(
-            <div className="main-page">
-                {this.renderUserInfo()}
-                {this.renderLogout()} 
-                {this.renderSportNews()}
-                {this.renderSportScores()}
-                {this.renderTeamData()}
-            </div>
+            <router>
+                <div className="main-page">
+                    {this.renderUserInfo()}
+                    {this.renderLogout()} 
+                    {this.renderSportNews()}
+                    {this.renderSportScores()}
+                    {this.renderTeamData()}
+                </div> 
+            </router>
+            
         )
     }
 }
