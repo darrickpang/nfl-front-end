@@ -4,6 +4,7 @@ import SportScores from '../components/SportScores'
 import TeamData from '../components/TeamData'
 import {  withRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import { Button } from 'reactstrap';
+import NavBar from '../components/NavBar';
 
 class UserMainContent extends React.Component {
     renderUserInfo = () => {
@@ -55,6 +56,7 @@ class UserMainContent extends React.Component {
                     {this.renderUserInfo()}
                     {this.renderLogout()} 
                     {this.renderSportNews()}
+                    <Route exact path="/scores" component={SportScores} />
                     {this.renderSportScores()}
                     {this.renderTeamData()}
                 </div> 
