@@ -59,6 +59,7 @@ class UserMainContent extends React.Component {
                     <Route exact path="/scores" component={SportScores} />
                     {this.renderSportScores()}
                     {this.renderTeamData()}
+                    <Route exact path="/data" component={TeamData} />
                 </div> 
             </Router>
             
