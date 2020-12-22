@@ -55,10 +55,11 @@ class UserMainContent extends React.Component {
                 <div className="main-page">
                     {this.renderUserInfo()}
                     {this.renderLogout()} 
-                    {this.renderSportNews()}
-                    <Route exact path="/scores" component={SportScores} />
+                    {/* {this.renderSportNews()}
                     {this.renderSportScores()}
-                    {this.renderTeamData()}
+                    {this.renderTeamData()} */}
+                    <NavBar />
+                    <Route exact path="/scores" component={SportScores} />
                     <Route exact path="/data" component={TeamData} />
                 </div> 
             </Router>
