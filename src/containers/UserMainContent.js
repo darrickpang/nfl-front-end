@@ -59,6 +59,7 @@ class UserMainContent extends React.Component {
                     {this.renderSportScores()}
                     {this.renderTeamData()} */}
                     <NavBar />
+                    <Route exact path="/" component={SportNews} />
                     <Route exact path="/scores" component={SportScores} />
                     <Route exact path="/data" component={TeamData} />
                 </div> 
