@@ -27,6 +27,7 @@ class UserMainContent extends React.Component {
         return(
             <Router>
                 <div className="main-page">
+                    Welcome to your main page. 
                     {this.renderUserInfo()}
                     {this.renderLogout()} 
                     <GeneralNavBar />
