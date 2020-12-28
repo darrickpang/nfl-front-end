@@ -8,6 +8,7 @@ class GeneralNavBar extends React.Component {
             <div>
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/nfl">NFL</NavLink>
+                <NavLink to="/nba">NBA</NavLink>
                 
             </div>
         )
