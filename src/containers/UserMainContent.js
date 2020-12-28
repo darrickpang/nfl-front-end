@@ -1,10 +1,10 @@
 import React from 'react';
-import SportNews from '../components/SportNews'
-import SportScores from '../components/SportScores'
-import TeamData from '../components/TeamData'
+import SportNews from '../components/NFL/SportNews'
+import SportScores from '../components/NFL/SportScores'
+import TeamData from '../components/NFL/TeamData'
 import {  withRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import { Button } from 'reactstrap';
-import NavBar from '../components/NavBar';
+import GeneralNavBar from '../components/NFL/NavBar';
 
 class UserMainContent extends React.Component {
     renderUserInfo = () => {
@@ -58,7 +58,7 @@ class UserMainContent extends React.Component {
                     {/* {this.renderSportNews()}
                     {this.renderSportScores()}
                     {this.renderTeamData()} */}
-                    <NavBar />
+                    <GeneralNavBar />
                     <Route exact path="/" component={SportNews} />
                     <Route exact path="/scores" component={SportScores} />
                     <Route exact path="/data" component={TeamData} />
