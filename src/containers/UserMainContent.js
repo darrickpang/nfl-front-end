@@ -1,7 +1,8 @@
 import React from 'react';
 import {  withRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 import { Button } from 'reactstrap';
-import GeneralNavBar from '../components/NFL/NavBar';
+import GeneralNavBar from '../components/GeneralNavBar';
+import NFL_info from '../components/NFL_info'
 
 class UserMainContent extends React.Component {
     renderUserInfo = () => {
@@ -28,13 +29,8 @@ class UserMainContent extends React.Component {
                 <div className="main-page">
                     {this.renderUserInfo()}
                     {this.renderLogout()} 
-                    {/* {this.renderSportNews()}
-                    {this.renderSportScores()}
-                    {this.renderTeamData()} */}
                     <GeneralNavBar />
-                    {/* <Route exact path="/" component={SportNews} />
-                    <Route exact path="/scores" component={SportScores} />
-                    <Route exact path="/data" component={TeamData} /> */}
+                    <Route exact path="/NFL" component={NFL_info} />
                 </div> 
             </Router>
             

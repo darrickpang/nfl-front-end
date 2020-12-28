@@ -1,7 +1,8 @@
 import React from 'react';
-import SportNews from '../components/NFL/SportNews'
-import SportScores from '../components/NFL/SportScores'
-import TeamData from '../components/NFL/TeamData'
+import SportNews from './NFL/SportNews'
+import SportScores from './NFL/SportScores'
+import TeamData from './NFL/TeamData'
+import {  withRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 
 class NFL_info extends React.Component {
 
@@ -31,11 +32,14 @@ class NFL_info extends React.Component {
 
     render(){
         return(
-            <div>
-                
-            </div>
+            <Router>
+                <div>
+                    test
+                </div>
+            </Router>
+            
         )
     }
 }
 
-export default NFL_info
+export default withRouter(NFL_info)
