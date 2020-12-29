@@ -5,15 +5,7 @@ import NBA_team_data from './NBA/NBA_team_data'
 import NavBar from './NBA/NavBar'
 import {  withRouter, BrowserRouter as Router, Route } from 'react-router-dom';
 
-class NFL_info extends React.Component {
-
-    renderSportNews = () => {
-        return(
-            <div>
-                <NBA_news/>
-            </div>
-        )
-    }
+class NBA_info extends React.Component {
 
     render(){
         return(
@@ -31,4 +23,4 @@ class NFL_info extends React.Component {
     }
 }
 
-export default withRouter(NFL_info)
+export default withRouter(NBA_info)
