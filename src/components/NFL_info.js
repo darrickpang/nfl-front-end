@@ -35,7 +35,6 @@ class NFL_info extends React.Component {
         return(
             <Router>
                 <div>
-                    test
                     <NavBar/>
                     <Route exact path="/" component={SportNews} />
                     <Route exact path="/scores" component={SportScores} />
