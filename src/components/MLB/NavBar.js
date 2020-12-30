@@ -6,9 +6,11 @@ class NavBar extends React.Component {
     render(){
         return(
             <div>
-                <NavLink to="/">News</NavLink>
-                <NavLink to="/scores"> Scores</NavLink>
-                <NavLink to="/data">Team Data</NavLink>
+                <ul>
+                    <li><NavLink to="/">News</NavLink></li>
+                    <li><NavLink to="/scores"> Scores</NavLink></li>
+                    <li><NavLink to="/data">Team Data</NavLink></li>
+                </ul>
             </div>
         )
     }
