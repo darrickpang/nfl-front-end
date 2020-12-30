@@ -6,10 +6,11 @@ class GeneralNavBar extends React.Component {
     render(){
         return(
             <div>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/nfl">NFL</NavLink>
-                <NavLink to="/nba">NBA</NavLink>
-                <NavLink to="/mlb">MLB</NavLink>
+                <NavLink to="/">Home,</NavLink>
+                <NavLink to="/nfl">NFL,</NavLink>
+                <NavLink to="/nba">NBA,</NavLink>
+                <NavLink to="/mlb">MLB,</NavLink>
+                <NavLink to="/nhl">NHL</NavLink>
             </div>
         )
     }
