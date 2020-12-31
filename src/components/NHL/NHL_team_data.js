@@ -18,8 +18,6 @@ class NHL_team_data extends React.Component {
     render(){
         return(
             <div>
-                team.js
-                {this.state.teams.length}
                 {this.state.teams.map(team => 
                     <p>{team.team.displayName}: {team.team.record.items[0].summary}</p>
                     )}

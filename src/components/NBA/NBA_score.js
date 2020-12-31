@@ -18,7 +18,6 @@ class NBA_score extends React.Component {
     render(){
         return(
             <div>
-                SportScores.js
                 {this.state.scores.map(score => 
                     <p>{score.name}</p>
                     )}

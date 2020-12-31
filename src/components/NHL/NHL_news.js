@@ -20,7 +20,6 @@ class NHL_news extends React.Component {
     render(){
         return(
             <div>
-                SportNews.js
                 {this.state.news.map(article => 
                     <p><a href={article.links.web.href}>{article.description}</a></p>
                     )}
