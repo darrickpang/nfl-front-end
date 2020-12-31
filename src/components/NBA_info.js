@@ -11,9 +11,8 @@ class NBA_info extends React.Component {
         return(
             <Router>
                 <div>
-                    test
                     <NavBar/>
-                    <Route exact path="/" component={NBA_news} />
+                    <Route exact path="/news" component={NBA_news} />
                     <Route exact path="/scores" component={NBA_score} />
                     <Route exact path="/data" component={NBA_team_data} />
                 </div>

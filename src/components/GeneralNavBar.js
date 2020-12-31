@@ -7,7 +7,7 @@ class GeneralNavBar extends React.Component {
         return(
             <div>
                 <ul>
-                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/home">Home</NavLink></li>
                     <li><NavLink to="/nfl">NFL</NavLink></li>
                     <li><NavLink to="/nba">NBA</NavLink></li>
                     <li><NavLink to="/mlb">MLB</NavLink></li>

@@ -7,7 +7,7 @@ class NavBar extends React.Component {
         return(
             <div>
                 <ul>
-                    <li><NavLink to="/">News</NavLink></li>
+                    <li><NavLink to="/news">News</NavLink></li>
                     <li><NavLink to="/scores"> Scores</NavLink></li>
                     <li><NavLink to="/data">Team Data</NavLink></li>
                 </ul>

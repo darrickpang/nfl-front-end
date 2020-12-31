@@ -11,9 +11,8 @@ class MLB_info extends React.Component {
         return(
             <Router>
                 <div>
-                    test
                     <NavBar/>
-                    <Route exact path="/" component={MLB_news} />
+                    <Route exact path="/news" component={MLB_news} />
                     <Route exact path="/scores" component={MLB_score} />
                     <Route exact path="/data" component={MLB_team_data} />
                 </div>

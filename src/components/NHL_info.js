@@ -12,7 +12,7 @@ class NFL_info extends React.Component {
             <Router>
                 <div>
                     <NavBar/>
-                    <Route exact path="/" component={NHL_news} />
+                    <Route exact path="/news" component={NHL_news} />
                     <Route exact path="/scores" component={NHL_score} />
                     <Route exact path="/data" component={NHL_team_data} />
                 </div>
