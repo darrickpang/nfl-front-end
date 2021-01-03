@@ -18,6 +18,7 @@ class NHL_score extends React.Component {
     render(){
         return(
             <div>
+                Visitor's score - Home team score
                 {this.state.scores.map(score => 
                     <p>{score.name}: {score.competitions[0].competitors[1].score} - {score.competitions[0].competitors[0].score}</p>
                     )}
